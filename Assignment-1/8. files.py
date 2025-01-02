@@ -91,8 +91,22 @@ with open('data/users.json', 'r') as file:
 # Assignments
 # -----------
 # Assignment 1: Write a script that reads a CSV file containing product information and converts it into a JSON file.
+# Read CSV file and convert to JSON
+import csv
+import json
+products = []
+with open('data/products.csv', 'r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
+        products.append(row)
+
+with open('data/products.json', 'w') as json_file:
+    json.dump(products, json_file, indent=4)
 
 # Assignment 2: Create a log file writer that appends log messages to a file with timestamps.
+# TODO:
+
 
 # Congratulations on completing the comprehensive section on Python file I/O and JSON handling!
 # Review the assignments, try to solve them, and check your understanding of file operations and data formats.
+

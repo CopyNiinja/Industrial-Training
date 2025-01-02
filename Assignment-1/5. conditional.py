@@ -45,8 +45,13 @@ else:
     print("Grade: D or F")
 
 # Assignment 1: Write a Python script that determines if a number is positive, negative, or zero using if-elif-else.
-# Write your code below:
-
+number = 10  # Example number
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
 
 # Section 2: Logical and Boolean Operations
 # -----------------------------------------
@@ -68,8 +73,12 @@ else:
     print("It's a weekday.")
 
 # Assignment 2: Create a script that checks if a person is eligible for a senior citizen discount based on age and residency.
-# Write your code below:
-
+age = 25  # Example age
+residency = "Bangladesh"  # Example residency
+if age >= 60 and residency == "Bangladesh":
+    print("Eligible for senior citizen discount.")
+else:
+    print("Not eligible for senior citizen discount.")
 
 # Section 3: Real-World Applications
 # -----------------------------------
@@ -94,9 +103,16 @@ elif age >= 18:
 print(f"Ticket price: ${price}")
 
 # Assignment 3: Write a script that simulates a basic login system. Check username and password correctness.
-# Write your code below:
+username = "Faiyaz"
+password = "password123"  # Example password
 
+input_username = "Faiyaz"  # Example input
+input_password = "password123"  # Example input
 
+if input_username == username and input_password == password:
+    print("Login successful.")
+else:
+    print("Login failed")
 
 # Example 7: Loan Approval System
 # This example uses multiple conditions to determine if an applicant qualifies for a personal loan.
@@ -146,7 +162,15 @@ print(f"Total shipping cost: ${shipping_cost:.2f}")
 
 # Assignment 4: Implement a system that categorizes a day based on temperature and weather conditions.
 # Use nested if-elif-else and logical operators to determine if it's a beach day, skiing day, or a stay-home day.
+temperature = 30  # Example temperature
+weather = "sunny"  # Example weather
 
+if temperature > 25 and weather == "sunny":
+    print("It's a sunny day.")
+elif temperature < 0 and weather == "snowy":
+    print("It's freezing cold")
+else:
+    print("It's a normal day")
 
 # Congratulations on completing the advanced section on Python conditional statements!
 # Review the assignments, try to solve them, and check your understanding of control flow in Python.

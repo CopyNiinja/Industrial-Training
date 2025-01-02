@@ -138,6 +138,26 @@ divide(10, 0)
 # Assignments
 # -----------
 # Assignment 1: Write a function that calculates the factorial of a number and handles any potential errors.
+def factorial(n):
+    
+    try:
+        if not isinstance(n, int):
+            raise TypeError("Only integers are allowed.")
+        if n < 0:
+            raise ValueError("Factorial is not defined for negative numbers.")
+        result = 1
+        for i in range(1, n + 1):
+            result += i
+        return result
+    except TypeError as e:
+        print(f"Error: {e}")
+    except ValueError as e:
+        print(f"Error: {e}")
+
+# Example usage
+print(f"Factorial of 5 is {factorial(5)}.")
+print(f"Factorial of -1 is {factorial(-1)}.")
+print(f"Factorial of 'a' is {factorial('a')}.")
 
 
 # Congratulations on completing the advanced section on Python functions!

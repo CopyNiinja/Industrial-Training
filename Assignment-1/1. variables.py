@@ -28,10 +28,10 @@ y = "Hello, Python learners!"
 
 # Assignment 1: Create two variables, one holding a number and the other holding your name. Then print both.
 # Write your code below:
-age = 22
-name = "Ibrahim bin Karim"
-# print("Age: ", age, end="; ")
-# print("Name: ", name)
+age = 25
+name = "Faiyaz Ahmed"
+print("Age: ", age, end="; ")
+print("Name: ", name)
 
 # Section 2: Data Types
 # ---------------------
@@ -51,7 +51,12 @@ print(type(d))
 
 # Assignment 2: Create variables of different types and use the type() function to check their types.
 # Write your code below:
-
+age = 25
+is_student = True
+course = "Computer Science"
+print(type(age))
+print(type(is_student))
+print(type(course))
 
 # Section 3: Variable Naming Conventions and Industry Standards
 # -------------------------------------------------------------
@@ -72,7 +77,10 @@ _bad_name = 23
 
 # Assignment 3: Fix the bad variable name above and create three more variables with good naming practices.
 # Write your code below:
-
+number = 42
+first_name = "Faiyaz"
+last_name = "Ahmed"
+age = 25
 
 # Section 4: Python's Dynamic Typing
 # ----------------------------------
@@ -89,7 +97,10 @@ print(var)
 
 # Assignment 4: Create a variable, assign it a value of one type, then reassign it to a different type and print both.
 # Write your code below:
-
+variable = "This is a string"
+print(variable)
+variable= 100
+print(variable)
 
 # Congratulations on completing this part of the Python workshop!
 # Review the assignments, try to solve them, and check your understanding of variables and data types.

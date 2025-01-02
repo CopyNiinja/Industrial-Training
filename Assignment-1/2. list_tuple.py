@@ -80,7 +80,20 @@ print("Simple List: ", simple_list)
 list_length = len(simple_list)
 
 # Assignment 1: Create a 2D list representing a 3x3 matrix and perform operations like accessing, modifying, and iterating through it.
-# Write your code below:
+matrix= [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+#accessing
+element = matrix[1][1]
+#modifying
+matrix[0][0] = 10
+matrix[0][2] = 56
+
+for row in matrix:
+    for col in row:
+        print(col, end=" ")
 
 
 # Section 2: Python Tuples
@@ -108,7 +121,9 @@ first_tuple_element = simple_tuple[0]
 tuple_dict = {simple_tuple: "My Tuple"}
 
 # Assignment 2: Create a tuple with mixed data types and demonstrate its potential use cases in data structures like dictionaries.
-# Write your code below:
+variable = (100, "Faiyaz", 50.475, False)
+
+dic = {variable: "My Tuple"}
 
 
 # Section 3: Advanced Applications
@@ -132,7 +147,9 @@ print(even_numbers)
 incremented_matrix = [[cell + 1 for cell in row] for row in matrix]
 
 # Assignment 3: Create a list of tuples, where each tuple contains a student's name and their grade. Sort this list by grades.
-# Write your code below:
+students = [("Faiyaz", 60), ("Karim", 50), ("Rahim", 70), ("Shakib", 100)]
+sortedStudents = sorted(students, key=lambda s: s[1])
+print("Sorted by Grades:", sortedStudents)
 
 
 # Congratulations on completing the advanced section on Python lists and tuples!

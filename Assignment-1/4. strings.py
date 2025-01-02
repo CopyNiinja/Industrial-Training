@@ -59,7 +59,13 @@ user_input = "   some user input   "
 # print(user_input.lstrip())  # Removes leading whitespace
 
 # Assignment 1: Create a string that contains a simple bio data like name, age, and country. Extract each piece of information and print them separately.
-# Write your code below:
+bio_data = "Name: Faiyaz, Age: 25, Country: Bangladesh"
+name = bio_data.split(", ")[0].split(": ")[1]
+age = bio_data.split(", ")[1].split(": ")[1]
+country = bio_data.split(", ")[2].split(": ")[1]
+print("Name:", name)
+print("Age:", age)
+print("Country:", country)
 
 
 # Section 2: Advanced String Operations
@@ -78,7 +84,13 @@ print(old_greeting)
 
 
 # Assignment 2: Create a formatted string that includes data from a list or dictionary. For example, use a dictionary to store a person's information and format a string to include it.
-# Write your code below:
+person_info = {
+    "name": "Faiyaz",
+    "age": 25,
+    "country": "Bangladesh"
+}
+formatted_string = f"Name: {person_info['name']}, Age: {person_info['age']}, Country: {person_info['country']}"
+print(formatted_string)
 
 
 # Section 3: Advanced Slicing and Multiline Strings
@@ -109,7 +121,17 @@ formatted_string = "The value of pi is {:.2f}".format(pi)  # Formatting to two d
 # print(formatted_string)
 
 # Assignment 3: Write a function that takes a string and returns a dictionary with the counts of each character in the string.
-# Write your code below:
+def char_count(s):
+    count_dict = {}
+    for char in s:
+        if char in count_dict:
+            count_dict[char] += 1
+        else:
+            count_dict[char] = 1
+    return count_dict
+
+sample_string = "Hello World,Lorem20,saosasasj"
+print("Character counts:", char_count(sample_string))
 
 
 # Section 4: Regular Expressions
@@ -179,14 +201,19 @@ replaced_text = re.sub(r'\d', 'X', 'My number: 12345, office: 98765')
 print("Censored text:", replaced_text)
 
 # Assignment: Write a regex to find all the hashtags in a string.
-text_with_hashtags = "This is a #great day to learn #regex in #Python!"
-
+text = "#This is a #great day to learn #regex in #Python!"
+hashtags = re.findall(r'#\w+', text)
+print("Hashtags found:", hashtags)
 
 # Assignments: Write a regex to find the Bangladesh phone number with all variations.
 # 01454565767
 # +880196345634
 # 0088785674657
 # 01845-567567
+regex = r'\b(?:\+880|0088)?1[3-9]\d{8}\b|\b1[3-9]\d{2}-\d{6}\b'
+input = "01454565767, +880196345634, 0088785674657, 01845-567567"
+bd_phones = re.findall(regex, input)
+print("Bangladesh phone numbers found:", bd_phones)
 
 # Congratulations on completing the advanced section on Python strings!
 # Review the assignments, try to solve them, and check your understanding of string manipulation techniques.

@@ -81,7 +81,38 @@ print("Pip examples: See comments for usage.")
 # Assignments
 # -----------
 # Assignment 1: Create a simple package with at least two modules, each containing one function.
+
+# mymodule1.py content:
+def sayHello(name):
+    print(f"Hello, {name}!")
+
+# mymodule2.py content:
+def sayBye(name):
+    print(f"Bye, {name}!")
+
+
 # Assignment 2: Use pip to install any library that is new to you and write a small script to explore its functionality.
+
+
+# pip install matplotlib
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Create a line plot
+plt.plot(x, y, marker='o', linestyle='-', color='b', label='Prime Numbers')
+
+# Add titles and labels
+plt.title('Line Plot Example')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.legend()
+
+# Show the plot
+plt.show()
+
 
 # Congratulations on completing the comprehensive section on Python's modules, packages, libraries, and pip!
 # Review the assignments, try to solve them, and check your understanding of these essential Python features.

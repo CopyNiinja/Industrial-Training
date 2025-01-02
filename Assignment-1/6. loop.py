@@ -82,9 +82,12 @@ for item, quantity in inventory.items():
 # Assignments
 # -----------
 # Assignment 1: Write a script that processes a list of temperature readings. If any temperature is above a certain threshold, print a warning.
+temparature = [99, 98, 100, 101, 99, 98, 99]
 
 
-
+for temp in temparature:
+    if temp > 102:
+        print("You have high fever")
 
 # Example 7: User Activity Log Analysis
 # This example processes a list of user activity logs to identify users who performed specific actions.
@@ -165,6 +168,9 @@ products = {
     "smartphone": {"stock": 15, "min_required": 5}
 }
 
+for product, details in products.items():
+    if details["stock"] < details["min_required"]:
+        print(f"Restock alert for {product}: Only {details['stock']} left, minimum required is {details['min_required']}.")
 
 # Congratulations on completing the advanced section on Python loops!
 # Review the assignments, try to solve them, and check your understanding of loops in Python.
