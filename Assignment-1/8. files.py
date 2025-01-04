@@ -104,7 +104,16 @@ with open('data/products.json', 'w') as json_file:
     json.dump(products, json_file, indent=4)
 
 # Assignment 2: Create a log file writer that appends log messages to a file with timestamps.
-# TODO:
+import datetime
+
+def write_log(message):
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open('data/log.txt', 'a') as file:
+        file.write(f"{timestamp} - {message}\n")
+
+# Example usage:
+write_log("This is a log message.")
+write_log("Another log entry.")
 
 
 # Congratulations on completing the comprehensive section on Python file I/O and JSON handling!

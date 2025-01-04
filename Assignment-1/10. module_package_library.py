@@ -82,6 +82,8 @@ print("Pip examples: See comments for usage.")
 # -----------
 # Assignment 1: Create a simple package with at least two modules, each containing one function.
 
+
+
 # mymodule1.py content:
 def sayHello(name):
     print(f"Hello, {name}!")
@@ -91,8 +93,13 @@ def sayBye(name):
     print(f"Bye, {name}!")
 
 
-# Assignment 2: Use pip to install any library that is new to you and write a small script to explore its functionality.
+from mypackage import mymodule1, mymodule2
+mymodule1.sayHello("Alice")
+mymodule2.sayBye("Alice")
 
+print("Assignment 1 example: See comments for usage.")
+
+# Assignment 2: Use pip to install any library that is new to you and write a small script to explore its functionality.
 
 # pip install matplotlib
 import matplotlib.pyplot as plt
