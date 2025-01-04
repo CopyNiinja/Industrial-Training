@@ -82,20 +82,20 @@ print("Pip examples: See comments for usage.")
 # -----------
 # Assignment 1: Create a simple package with at least two modules, each containing one function.
 
-#Path Directory
+# Path Directory
 
-mypackage/
-    __init__.py
-    mymodule1.py
-    mymodule2.py
+# mypackage/
+#     __init__.py
+#     mymodule1.py
+#     mymodule2.py
 
 # mypackage/mymodule1.py content:
-def sayHello(name):
-    print(f"Hello, {name}!")
+# def sayHello(name):
+#     print(f"Hello, {name}!")
 
 # mypackage/mymodule2.py content:
-def sayBye(name):
-    print(f"Bye, {name}!")
+# def sayBye(name):
+#     print(f"Bye, {name}!")
 
 # To use the package, you would import the modules:
 from mypackage import mymodule1, mymodule2
